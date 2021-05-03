@@ -1,5 +1,5 @@
 ## Sawyer
-> Nginx RTMP, DASH/HLS Live Media Server
+> Nginx based RTMP, DASH/HLS Live Media Server
 
 ### Articles
 
@@ -24,7 +24,7 @@
 ### Open Source (Server)
 - [pozgo/docker-supervisor](https://github.com/pozgo/docker-supervisor)
 - [pozgo/docker-rtmp-hls](https://github.com/pozgo/docker-rtmp-hls) - Docker image for video streaming server that supports RTMP, HLS, and DASH streams.
-- [arut/nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module) - NGINX-based Media Streaming Server
+- [**arut/nginx-rtmp-module**](https://github.com/arut/nginx-rtmp-module) - NGINX-based Media Streaming Server
 
 
 ### Open Source (Player)
