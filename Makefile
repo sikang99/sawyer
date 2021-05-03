@@ -139,4 +139,3 @@ git-pdate gu:
 git-store gs:
 	git config credential.helper store
 #---------------------------------------------------------------------------------
-
