@@ -15,7 +15,7 @@
 
 
 ### Docker Hub
-- [polinux/rtmp-hls](https://hub.docker.com/r/polinux/rtmp-hls/)
+- [polinux/rtmp-hls](https://hub.docker.com/r/polinux/rtmp-hls/) - RTMP HLS Streaming server in a Docker (Alpine)
 - [polinux/supervisor/](https://hub.docker.com/r/polinux/supervisor/) - Supervisor in a Docker (CentOS and Alpine) 
     
 
