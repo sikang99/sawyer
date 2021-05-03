@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    sawyer:
+        image: cojam/sawyer:1.0.0.2-alpine-3.13
+        container_name: sawyer
+        restart: unless-stopped
+        ports:
+            - 1935:1935
+            - 8080:8080
+        

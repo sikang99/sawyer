@@ -1,5 +1,5 @@
 #
-# Makefile for gortmp (RTMP, HLS)
+# Makefile for sawyer (RTMP, DASH/HLS)
 #
 ORG=cojam
 NAME=sawyer
@@ -21,6 +21,7 @@ local-build lb:
 
 local-run lr:
 	./$(NAME) &
+
 local-kill lk:
 	pkill ffmpeg ffplay $(NAME)
 
@@ -45,7 +46,7 @@ remote-play rp:
 	ffplay rtmp://cobot.center/live/iceage
 
 rcf2:
-	ffmpeg -re -i data/demo.flv -c:a aac -c:v h264 -f flv rtmp://cobot.center:$(PORT)/live/japan
+	ffmpeg -re -i data/japan.flv -c:a aac -c:v h264 -f flv rtmp://cobot.center:$(PORT)/live/japan
 rpf2:
 	ffplay rtmp://cobot.center:$(PORT)/live/japan
 rpv2:
