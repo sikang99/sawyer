@@ -1,8 +1,8 @@
-FROM alpine:latest as builder
+FROM alpine:3.13 as builder
 
-ENV   NGINX_VERSION=1.19.4 \
+ENV   NGINX_VERSION=1.20.0 \
       NGINX_RTMP_MODULE_VERSION=1.2.1 \
-      FFMPEG_VERSION=4.3.1
+      FFMPEG_VERSION=4.3.2
 
 RUN apk update  && \
   apk --no-cache add \
@@ -96,7 +96,8 @@ RUN apk update  && \
   rm -rf /tmp/build && \
   tar czvf /stage.tgz /usr/local /etc/nginx /var/log/nginx /var/lock /var/run/nginx
 
-FROM polinux/supervisor:alpine 
+#FROM polinux/supervisor:alpine 
+FROM alpine:3.13
 
 COPY --from=builder /stage.tgz /stage.tgz
 
