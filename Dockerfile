@@ -1,8 +1,8 @@
 FROM alpine:3.13 as builder
 
-ENV   NGINX_VERSION=1.20.0 \
-      NGINX_RTMP_MODULE_VERSION=1.2.1 \
-      FFMPEG_VERSION=4.3.2
+ENV NGINX_VERSION=1.20.0 \
+    NGINX_RTMP_MODULE_VERSION=1.2.1 \
+    FFMPEG_VERSION=4.3.2
 
 RUN apk update  && \
   apk --no-cache add \
@@ -34,7 +34,6 @@ RUN apk update  && \
     x264-dev \
     x265-dev && \
   rm -rf /var/cache/apk/* && \
-  #rm -rf /var/lib/apt/lists/* && \  
   mkdir -p /tmp/build && \
   cd /tmp/build && \
   wget https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
@@ -98,7 +97,6 @@ RUN apk update  && \
   tar czvf /stage.tgz /usr/local /etc/nginx /var/log/nginx /var/lock /var/run/nginx
 
 #-----------------------------------------------------------------------------------------------------------
-#FROM polinux/supervisor:alpine 
 FROM alpine:3.13
 
 COPY --from=builder /stage.tgz /stage.tgz
@@ -120,7 +118,6 @@ RUN apk update  && \
     freetype \
     lame && \
   rm -rf /var/cache/apk/* && \
-  #rm -rf /var/lib/apt/lists/* && \  
   tar zxvf /stage.tgz && \
   rm -rf /stage.tgz && \
   adduser --shell /bin/bash --disabled-password www www && \
