@@ -8,7 +8,9 @@
 ### Information
 - [Streaming with nginx-rtmp-module](http://nginx-rtmp.blogspot.com/)
 - [HLSPlayer.net](https://www.hlsplayer.net/) - M3U8 Player, MP4 Player, RTMP Player 
-
+- [OBS Studio](https://obsproject.com/)
+- [VLC media player](https://www.videolan.org/vlc/index.html)
+)
 
 ### Tips: StackOverflow, StackExchange
 
