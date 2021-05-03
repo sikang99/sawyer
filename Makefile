@@ -14,7 +14,7 @@ usage:
 	@echo "usage: make [local|remote|docker|compose|git] for $(NAME)"
 #----------------------------------------------------------------------------------
 local l:
-	@echo "> make (local) [build|run|kill|cast|play]"
+	@echo "> make (local) [build|run|kill|cast|play|vlc|stat]"
 
 local-build lb:
 	go build -o $(NAME)
@@ -40,16 +40,16 @@ remote r:
 	@echo "> make (remote) [cast|play]"
 
 remote-cast rc:
-	ffmpeg -re -stream_loop -1 -i data/iceage3-tlrd_h480p.mov -c copy -f flv rtmp://cobot.center/iceage
+	ffmpeg -re -stream_loop -1 -i data/iceage3-tlrd_h480p.mov -c copy -f flv rtmp://cobot.center/live/iceage
 remote-play rp:
-	ffplay rtmp://cobot.center/iceage
+	ffplay rtmp://cobot.center/live/iceage
 
 rcf2:
-	ffmpeg -re -i data/demo.flv -c:a aac -c:v h264 -f flv rtmp://cobot.center:$(PORT)/japan
+	ffmpeg -re -i data/demo.flv -c:a aac -c:v h264 -f flv rtmp://cobot.center:$(PORT)/live/japan
 rpf2:
-	ffplay rtmp://cobot.center:$(PORT)/japan
+	ffplay rtmp://cobot.center:$(PORT)/live/japan
 rpv2:
-	vlc rtmp://cobot.center:$(PORT)/japan
+	vlc rtmp://cobot.center:$(PORT)/live/japan
 #---------------------------------------------------------------------------------
 build-run br:
 	-@make lk
