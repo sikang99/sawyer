@@ -28,15 +28,13 @@ local-clean:
 	rm -f $(NAME)
 
 local-cast lc:
-	ffmpeg -re -stream_loop -1 -i data/iceage3-tlrd_h480p.mov -c copy -f flv rtmp://localhost/iceage
+	ffmpeg -re -stream_loop -1 -i data/iceage3-tlrd_h480p.mov -c copy -f flv rtmp://localhost/live/iceage
 local-play lp:
-	ffplay rtmp://localhost/iceage
-
-lc2:
-	ffmpeg -re -i data/Jellyfish_720_10s_30MB.webm -c:a aac -c:v h264 -f flv rtmp://localhost:$(PORT)/jellyfish
-lp2:
-	ffplay rtmp://localhost:$(PORT)/jellyfish -fflags nobuffer
-
+	ffplay rtmp://localhost:1935/live/iceage
+local-vlc lv:
+	vlc rtmp://localhost:1935/live/iceage
+local-stat ls:
+	open http://localhost:8080/stat
 #---------------------------------------------------------------------------------
 remote r:
 	@echo "> make (remote) [cast|play]"
@@ -52,20 +50,6 @@ rpf2:
 	ffplay rtmp://cobot.center:$(PORT)/japan
 rpv2:
 	vlc rtmp://cobot.center:$(PORT)/japan
-
-#---------------------------------------------------------------------------------
-xr:
-	docker run -d -p 1935:1935 -p 8080:8080 --name xxx polinux/rtmp-hls
-xk:
-	docker stop xxx && docker rm xxx
-xc:
-	ffmpeg -re -stream_loop -1 -i data/iceage3-tlrd_h480p.mov -c copy -f flv rtmp://localhost/live/iceage
-xp:
-	ffplay rtmp://localhost:1935/live/iceage
-xv:
-	vlc rtmp://localhost:1935/live/iceage
-xh:
-	http://localhost:8080/player/?iceage
 #---------------------------------------------------------------------------------
 build-run br:
 	-@make lk
