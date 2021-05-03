@@ -87,6 +87,7 @@ docker-build db:
 docker-run dr:
 	docker run -d \
    		-p 1935:1935 \
+		-p 8080:8080 \
    		--name $(NAME) $(IMAGE)
 
 docker-kill dk:

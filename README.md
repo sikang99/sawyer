@@ -15,10 +15,11 @@
 
 ### Docker Hub
 - [polinux/rtmp-hls](https://hub.docker.com/r/polinux/rtmp-hls/)
+
     
 
-
 ### Open Source (Server)
+- [pozgo/docker-supervisor](https://github.com/pozgo/docker-supervisor)
 - [pozgo/docker-rtmp-hls](https://github.com/pozgo/docker-rtmp-hls) - Docker image for video streaming server that supports RTMP, HLS, and DASH streams.
 - [arut/nginx-rtmp-module](https://github.com/arut/nginx-rtmp-module) - NGINX-based Media Streaming Server
 

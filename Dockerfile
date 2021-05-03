@@ -33,7 +33,8 @@ RUN apk update  && \
     freetype-dev \
     x264-dev \
     x265-dev && \
-  rm -rf /var/lib/apt/lists/* && \  
+  rm -rf /var/cache/apk/* && \
+  #rm -rf /var/lib/apt/lists/* && \  
   mkdir -p /tmp/build && \
   cd /tmp/build && \
   wget https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
@@ -96,6 +97,7 @@ RUN apk update  && \
   rm -rf /tmp/build && \
   tar czvf /stage.tgz /usr/local /etc/nginx /var/log/nginx /var/lock /var/run/nginx
 
+#-----------------------------------------------------------------------------------------------------------
 #FROM polinux/supervisor:alpine 
 FROM alpine:3.13
 
@@ -105,6 +107,8 @@ RUN apk update  && \
   apk --no-cache add \
     bash \
     ca-certificates \
+    supervisor \
+    inotify-tools \
     openssl \
     pcre \
     libtheora \
@@ -115,7 +119,8 @@ RUN apk update  && \
     x265-dev \
     freetype \
     lame && \
-  rm -rf /var/lib/apt/lists/* && \  
+  rm -rf /var/cache/apk/* && \
+  #rm -rf /var/lib/apt/lists/* && \  
   tar zxvf /stage.tgz && \
   rm -rf /stage.tgz && \
   adduser --shell /bin/bash --disabled-password www www && \
@@ -125,3 +130,7 @@ RUN apk update  && \
 ADD container-files /
 
 EXPOSE 1935 8080
+
+VOLUME ["/data"]
+
+ENTRYPOINT ["/config/bootstrap.sh"]
