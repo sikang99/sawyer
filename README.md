@@ -6,6 +6,7 @@
 
 
 ### Information
+- [Streaming with nginx-rtmp-module](http://nginx-rtmp.blogspot.com/)
 - [HLSPlayer.net](https://www.hlsplayer.net/) - M3U8 Player, MP4 Player, RTMP Player 
 
 
@@ -15,7 +16,7 @@
 
 ### Docker Hub
 - [polinux/rtmp-hls](https://hub.docker.com/r/polinux/rtmp-hls/)
-
+- [polinux/supervisor/](https://hub.docker.com/r/polinux/supervisor/) - Supervisor in a Docker (CentOS and Alpine) 
     
 
 ### Open Source (Server)
