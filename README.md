@@ -10,7 +10,8 @@
 - [HLSPlayer.net](https://www.hlsplayer.net/) - M3U8 Player, MP4 Player, RTMP Player 
 - [OBS Studio](https://obsproject.com/)
 - [VLC media player](https://www.videolan.org/vlc/index.html)
-)
+- [Media streaming with ExoPlayer](https://developer.android.com/codelabs/exoplayer-intro#0)
+
 
 ### Tips: StackOverflow, StackExchange
 
