@@ -1,5 +1,5 @@
 ## Sawyer
-> Nginx RTMP, HLS Live Media Server
+> Nginx RTMP, DASH/HLS Live Media Server
 
 ### Articles
 
