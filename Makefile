@@ -44,6 +44,8 @@ remote-cast rc:
 	ffmpeg -re -stream_loop -1 -i data/iceage3-tlrd_h480p.mov -c copy -f flv rtmp://cobot.center/live/iceage
 remote-play rp:
 	ffplay rtmp://cobot.center/live/iceage
+remote-vlc rv:
+	vlc rtmp://cobot.center/live/iceage
 
 rcf2:
 	ffmpeg -re -i data/japan.flv -c:a aac -c:v h264 -f flv rtmp://cobot.center:$(PORT)/live/japan
