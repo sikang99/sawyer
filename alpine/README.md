@@ -11,6 +11,10 @@
     - [pingostack](https://github.com/pingostack) - open source software for streaming media
 
 
+### Open Source
+- [woonizzooni/nginx-media-server](https://github.com/woonizzooni/nginx-media-server)
+
+
 ### Slides
 - 2016 [NGINX for Commercial Quality Streaming Services](https://www.nginx.com/wp-content/uploads/2018/12/NGINX-Conf-2018-slides_Choi-streaming.pdf)
 
