@@ -6,10 +6,10 @@ BUILDN=1.18.0.3
 usage:
 	@echo i"usage: make [git]"
 #----------------------------------------------------------------------
-git-update gu:
+git g:
 	@echo "> make (git:g) [update|store]"
 
-git-pdate gu:
+git-update gu:
 	git add .
 	git commit -a -m "$(BUILD),$(USER)"
 	git push
