@@ -6,6 +6,8 @@
     - [nginx-mod-rtmp](https://pkgs.alpinelinux.org/packages?name=nginx-mod-rtmp&branch=v3.13)
     - [nginx-mod-stream](https://pkgs.alpinelinux.org/packages?name=nginx-mod-stream&branch=v3.13)
     - [nginx-mod-http-echo](https://pkgs.alpinelinux.org/packages?name=nginx-mod-http-echo&branch=v3.13)
+- [PingOS](https://pingos.io/)
+    - [pingostack](https://github.com/pingostack) - open source software for streaming media
 
 
 ### Slides

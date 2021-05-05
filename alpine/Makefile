@@ -45,7 +45,6 @@ docker-build db:
 
 docker-run dr:
 	docker run -d \
-		-p 80:80 -p 443:443 \
 		-p 8080:8080 -p 1935:1935 \
 		-v $(PWD)/cert:/etc/ssl/cert \
 		-v $(PWD)/conf/nginx.conf:/etc/nginx/nginx.conf \
@@ -56,7 +55,6 @@ docker-run dr:
 
 docker-run-base drb:
 	docker run -d \
-		-p 80:80 -p 443:443 \
 		-p 8080:8080 -p 1935:1935 \
 		-v $(PWD)/log:/var/log/nginx \
 		--name $(NAME) $(IMAGE)
