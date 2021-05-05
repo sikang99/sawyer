@@ -1,5 +1,5 @@
 FROM alpine:3.13
-MAINTAINER "Stoney Kang <sikang99@gmail.com>"
+LABEL MAINTAINER "Stoney Kang <sikang99@gmail.com>"
 ##==========================================================================
 RUN apk update && apk add ca-certificates
 ##--------------------------------------------------------------------------
