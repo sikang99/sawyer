@@ -135,14 +135,6 @@ compose-ps cp:
 compose-logs cl:
 	docker-compose logs -f
 #---------------------------------------------------------------------------------
-git g:
-	@echo "> make (git:g) [update|store]"
-
 git-pdate gu:
-	git add .
-	git commit -a -m "$(BUILD),$(USER)"
-	git push
-
-git-store gs:
-	git config credential.helper store
+	cd ..; make gu
 #---------------------------------------------------------------------------------
