@@ -36,6 +36,9 @@ icaage-ffplay if:
 	ffplay rtmp://localhost/live/iceage
 icaage-vlc iv:
 	vlc rtmp://localhost/live/iceage\?pwd=teamgrit8266
+
+local-stat ls:
+	open http://localhost:8080/stat
 #-----------------------------------------------------------------------
 docker d:
 	@echo "> make (docker) [run|kill|exec|ps|upload|download for $(IMAGE)"
