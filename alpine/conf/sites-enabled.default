@@ -1,0 +1,6 @@
+location /auth {
+        if ($arg_pwd = 'a_secret_password') {
+            return 200;
+            }
+            return 401;
+}

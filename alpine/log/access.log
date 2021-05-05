@@ -1,0 +1,3 @@
+127.0.0.1 - - [05/May/2021:10:05:05 +0000] "GET /auth?app=live&flashver=FMLE/3.0%20(compatible%3B%20FMSc/1.0)&swfurl=rtmp://localhost/live&tcurl=rtmp://localhost/live&pageurl=&addr=172.17.0.1&clientid=1&call=publish&name=obscast&type=live&pwd=teamgrit8266 HTTP/1.0" 200 0 "-" "-" "-"
+127.0.0.1 - - [05/May/2021:10:07:23 +0000] "GET /auth?app=live&flashver=FMLE/3.0%20(compatible%3B%20FMSc/1.0)&swfurl=rtmp://localhost/live&tcurl=rtmp://localhost/live&pageurl=&addr=172.17.0.1&clientid=1&call=publish&name=obscast&type=live&pwd=teamgrit8266 HTTP/1.0" 200 0 "-" "-" "-"
+172.17.0.1 [05/May/2021:10:07:36 +0000] PLAY "live" "obscast" "" - 374 901213 "" "LNX 9,0,124,2" (2s)
