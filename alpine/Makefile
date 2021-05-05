@@ -7,7 +7,7 @@ NAME=sawyer
 VERSION=1.18.0
 BASE=$(ORG)/$(NAME)
 DIST=alpine-3.13
-BUILD=$(VERSION).3
+BUILD=$(VERSION).4
 IMAGE=$(BASE):$(BUILD)-$(DIST)
 .PHONY: usage build bak
 #-----------------------------------------------------------------------
@@ -53,6 +53,7 @@ docker-run dr:
 		-v $(PWD)/conf/nginx.conf:/etc/nginx/nginx.conf \
 		-v $(PWD)/conf/default.conf:/etc/nginx/conf.d/default.conf \
 		-v $(PWD)/html:/var/www/html \
+		-v $(PWD)/record:/var/www/record \
 		-v $(PWD)/log:/var/log/nginx \
 		--name $(NAME) $(IMAGE)
 
