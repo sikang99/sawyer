@@ -2,6 +2,7 @@
 > Nginx based RTMP, DASH/HLS Live Media Server
 
 ### Articles
+- 2020/11/08 [Docker - NGINX MEDIA SERVER 만들기](https://woonizzooni.tistory.com/entry/Docker-NGINX-MEDIA-SERVER-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 - 2020/04/16 [Enabling Video Streaming for Remote Learning with NGINX and NGINX Plus](https://www.nginx.com/blog/video-streaming-for-remote-learning-with-nginx/)
 - 2020/03/19 [Nginx 기본 설정 방법](https://architectophile.tistory.com/12)
 
@@ -34,6 +35,7 @@
 
 
 ### Open Source (Player)
+- [Bilibili/flv.js](https://github.com/Bilibili/flv.js) - HTML5 FLV Player
 
 
 ### Open Source (Caster)
