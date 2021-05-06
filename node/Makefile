@@ -31,13 +31,27 @@ obscast-hls oh:
 obscast-dash od:
 	open http://localhost:8080/live/obscast/index.mpd
 
-icaage-ffplay if:
-	ffplay rtmp://localhost/live/iceage
-icaage-vlc iv:
-	vlc rtmp://localhost/live/iceage\?pwd=teamgrit8266
 
+local-cast lc:
+	ffmpeg -re -stream_loop -1 -i ../data/japan.flv -c copy -f flv rtmp://cobot.center/live/japan
+local-play lp:
+	ffplay rtmp://cobot.center/live/japan
+local-vlc lv:
+	vlc rtmp://cobot.center/live/japan
+local-hls lh:
+	open http://cobot.center:8080/live/japan/index.m3u8
 local-stat ls:
 	open http://localhost:8080/admin
+
+
+remote-cast rc:
+	ffmpeg -re -stream_loop -1 -i ../data/japan.flv -c copy -f flv rtmp://cobot.center/live/japan
+remote-play rp:
+	ffplay rtmp://cobot.center/live/japan
+remote-vlc rv:
+	vlc rtmp://cobot.center/live/japan
+remote-hls rh:
+	open http://cobot.center:8080/live/japan/index.m3u8
 remote-stat rs:
 	open http://cobot.center:8080/admin
 #-----------------------------------------------------------------------
@@ -51,6 +65,7 @@ docker-run dr:
 	docker run -d \
 		-p 8080:8080 -p 1935:1935 \
 		-v $(PWD)/config.json:/usr/src/app/config.json \
+		-v $(PWD)/media:/usr/src/app/media \
 		--name $(NAME) $(IMAGE)
 
 docker-run-base drb:
