@@ -16,6 +16,8 @@
 - [PingOS](https://pingos.io/)
     - [config](https://pingos.io/docs/en/config-common)
     - [pingostack](https://github.com/pingostack) - open source software for streaming media
+- [The Top 10 Nginx Rtmp Open Source Projects](https://awesomeopensource.com/projects/nginx-rtmp)
+- [**170 Open Source Rtmp Software Projects**](https://opensourcelibs.com/libs/rtmp)
 
 
 ### Open Source

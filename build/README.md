@@ -17,6 +17,8 @@
 - [RTMP Streaming Server](https://www.scaleway.com/en/docs/setup-rtmp-streaming-server/)
 - [Setting up HLS live streaming server using NGINX + nginx-rtmp-module on Ubuntu](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
 - [Nginx Download](https://nginx.org/download/) - all versions, 1.20.0
+- [The Top 10 Nginx Rtmp Open Source Projects](https://awesomeopensource.com/projects/nginx-rtmp)
+- [170 Open Source Rtmp Software Projects](https://opensourcelibs.com/libs/rtmp)
 
 
 ### Tips: StackOverflow, StackExchange
@@ -40,6 +42,7 @@
 
 ### Open Source (Player)
 - [Bilibili/flv.js](https://github.com/Bilibili/flv.js) - HTML5 FLV Player
+- [3m1o/nginx-rtmp-monitoring](https://github.com/3m1o/nginx-rtmp-monitoring) - real-time monitoring statistics dashboard for nginx rtmp module
 
 
 ### Open Source (Caster)
