@@ -25,7 +25,8 @@
 ### Docker Hub
 - [polinux/rtmp-hls](https://hub.docker.com/r/polinux/rtmp-hls/) - RTMP HLS Streaming server in a Docker (Alpine)
 - [polinux/supervisor/](https://hub.docker.com/r/polinux/supervisor/) - Supervisor in a Docker (CentOS and Alpine) 
-    
+- [mugennsou/nginx-http-flv/](https://hub.docker.com/r/mugennsou/nginx-http-flv/) - NGINX with http-flv-module
+
 
 ### Open Source (Server)
 - [pozgo/docker-supervisor](https://github.com/pozgo/docker-supervisor)
