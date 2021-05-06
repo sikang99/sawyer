@@ -2,7 +2,7 @@
 # Makefile for Sawyer(nginx)
 #
 ORG=cojam
-NAME=sawyer
+NAME=sawyer-pkg
 #NAME=nginx-arm
 VERSION=1.18.0
 BASE=$(ORG)/$(NAME)

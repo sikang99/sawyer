@@ -50,7 +50,7 @@ const NodeMediaServer = require('./');
 //   }
 // };
 
-// -- changed by sikang
+// -- updated by sikang
 const fs = require('fs');
 const jsonFile = fs.readFileSync('./config.json', 'utf8');
 if (jsonFile == undefined) {

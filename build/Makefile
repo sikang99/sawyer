@@ -2,7 +2,7 @@
 # Makefile for sawyer (RTMP, DASH/HLS)
 #
 ORG=cojam
-NAME=sawyer
+NAME=sawyer-build
 BASE=$(ORG)/$(NAME)
 VERSION=1.0.0
 BUILD=$(VERSION).3
