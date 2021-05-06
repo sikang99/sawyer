@@ -16,6 +16,7 @@
 - [Media streaming with ExoPlayer](https://developer.android.com/codelabs/exoplayer-intro#0)
 - [RTMP Streaming Server](https://www.scaleway.com/en/docs/setup-rtmp-streaming-server/)
 - [Setting up HLS live streaming server using NGINX + nginx-rtmp-module on Ubuntu](https://docs.peer5.com/guides/setting-up-hls-live-streaming-server-using-nginx/)
+- [Nginx Download](https://nginx.org/download/) - all versions, 1.20.0
 
 
 ### Tips: StackOverflow, StackExchange
