@@ -1,7 +1,7 @@
 #
 # Makefile for Sawyer
 #
-BUILD=1.18.0.5
+BUILD=2.18.4.5
 #----------------------------------------------------------------------
 usage:
 	@echo i"usage: make [git]"
