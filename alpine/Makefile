@@ -39,6 +39,8 @@ icaage-vlc iv:
 
 local-stat ls:
 	open http://localhost:8080/stat
+remote-stat rs:
+	open http://cobot.center:8080/stat
 #-----------------------------------------------------------------------
 docker d:
 	@echo "> make (docker) [run|kill|exec|ps|upload|download for $(IMAGE)"
