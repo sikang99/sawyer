@@ -20,6 +20,7 @@
 
 ### Open Source
 - [woonizzooni/nginx-media-server](https://github.com/woonizzooni/nginx-media-server)
+- [MonaSolutions/MonaServer](https://github.com/MonaSolutions/MonaServer) - A lightweight RTMFP, RTMP, WebSocket and HTTP server!
 
 
 ### Slides
