@@ -13,22 +13,11 @@
     "webroot": "./www",
     "api": true
   },
-  "https": {
-    "port": 8443,
-    "key": "./privatekey.pem",
-    "cert": "./certificate.pem"
-  },
   "trans": {
     "ffmpeg": "/usr/bin/ffmpeg",
     "tasks": [
       {
         "app": "live",
-        "vc": "copy",
-        "vcParam": [],
-        "ac": "aac",
-        "acParam": ["-ab", "64k", "-ac", "1", "-ar", "44100"],
-        "rtmp": true,
-        "rtmpApp": "live2",
         "mp4": true,
         "mp4Flags": "[movflags=frag_keyframe+empty_moov]",
         "hls": true,

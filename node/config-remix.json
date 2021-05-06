@@ -1,0 +1,16 @@
+{
+  "trans": {
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "tasks": [
+      {
+        "app": "live",
+        "vc": "copy",
+        "vcParam": [],
+        "ac": "aac",
+        "acParam": ["-ab", "64k", "-ac", "1", "-ar", "44100"],
+        "rtmp": true,
+        "rtmpApp": "live2",
+      }
+    ]
+  }
+}
