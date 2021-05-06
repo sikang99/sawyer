@@ -1,5 +1,5 @@
 #
-# Makefile for Sawyer(nginx)
+# Makefile for Sawyer (node)
 #
 ORG=cojam
 NAME=sawyer-node

@@ -1,5 +1,5 @@
 #
-# Makefile for sawyer (RTMP, DASH/HLS)
+# Makefile for sawyer (build)
 #
 ORG=cojam
 NAME=sawyer-build

@@ -1,5 +1,5 @@
 #
-# Makefile for Sawyer(nginx)
+# Makefile for Sawyer (pkg)
 #
 ORG=cojam
 NAME=sawyer-pkg
