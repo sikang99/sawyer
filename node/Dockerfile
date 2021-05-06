@@ -1,6 +1,6 @@
 FROM node:10.15.0-alpine
 
-ARG BUILD_DATE
+ARG BUILD_DATE 2021-05-06
 ARG VCS_REF
 
 LABEL org.label-schema.build-date="${BUILD_DATE}" \

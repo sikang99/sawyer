@@ -2,12 +2,11 @@
 # Makefile for Sawyer(nginx)
 #
 ORG=cojam
-NAME=sawyer
-#NAME=nginx-arm
-VERSION=1.18.0
+NAME=sawyer-node
+VERSION=2.1.4
 BASE=$(ORG)/$(NAME)
 DIST=alpine-3.13
-BUILD=$(VERSION).5
+BUILD=$(VERSION).0
 IMAGE=$(BASE):$(BUILD)-$(DIST)
 .PHONY: usage build bak
 #-----------------------------------------------------------------------
@@ -38,9 +37,9 @@ icaage-vlc iv:
 	vlc rtmp://localhost/live/iceage\?pwd=teamgrit8266
 
 local-stat ls:
-	open http://localhost:8080/stat
+	open http://localhost:8000/admin
 remote-stat rs:
-	open http://cobot.center:8080/stat
+	open http://cobot.center:8000/stat
 #-----------------------------------------------------------------------
 docker d:
 	@echo "> make (docker) [run|kill|exec|ps|upload|download for $(IMAGE)"
@@ -50,13 +49,7 @@ docker-build db:
 
 docker-run dr:
 	docker run -d \
-		-p 8080:8080 -p 1935:1935 \
-		-v $(PWD)/cert:/etc/ssl/cert \
-		-v $(PWD)/conf/nginx.conf:/etc/nginx/nginx.conf \
-		-v $(PWD)/conf/default.conf:/etc/nginx/conf.d/default.conf \
-		-v $(PWD)/html:/var/www/html \
-		-v $(PWD)/record:/var/www/record \
-		-v $(PWD)/log:/var/log/nginx \
+		-p 8000:8000 -p 1935:1935 \
 		--name $(NAME) $(IMAGE)
 
 docker-run-base drb:
