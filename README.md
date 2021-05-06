@@ -1,4 +1,4 @@
-## Sawyer : Classic live streaming server
+## Sawyer : RTMP live streaming servers
 
 
 ### Versions
