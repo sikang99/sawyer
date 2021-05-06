@@ -5,6 +5,7 @@
 - 2020/11/08 [Docker - NGINX MEDIA SERVER 만들기](https://woonizzooni.tistory.com/entry/Docker-NGINX-MEDIA-SERVER-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 - 2020/04/16 [Enabling Video Streaming for Remote Learning with NGINX and NGINX Plus](https://www.nginx.com/blog/video-streaming-for-remote-learning-with-nginx/)
 - 2020/03/19 [Nginx 기본 설정 방법](https://architectophile.tistory.com/12)
+- [Build IPC camera video push-pull streaming server based on nginx HTTP flv module module](https://www.fatalerrors.org/a/0tp11j8.html)
 
 
 ### Information
