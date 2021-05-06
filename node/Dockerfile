@@ -87,7 +87,6 @@ rm -rf /var/cache/apk/*
 WORKDIR /usr/src/app
 
 COPY package*.json ./
-
 RUN npm i
 
 COPY . .

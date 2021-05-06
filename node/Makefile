@@ -6,7 +6,7 @@ NAME=sawyer-node
 VERSION=2.1.4
 BASE=$(ORG)/$(NAME)
 DIST=alpine-3.13
-BUILD=$(VERSION).0
+BUILD=$(VERSION).1
 IMAGE=$(BASE):$(BUILD)-$(DIST)
 .PHONY: usage build bak
 #-----------------------------------------------------------------------
