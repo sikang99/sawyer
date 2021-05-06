@@ -1,54 +1,66 @@
 const NodeMediaServer = require('./');
 
-const config = {
-  rtmp: {
-    port: 1935,
-    chunk_size: 60000,
-    gop_cache: true,
-    ping: 30,
-    ping_timeout: 60,
-	/*
-    ssl: {
-      port: 443,
-      key: './privatekey.pem',
-      cert: './certificate.pem',
-    }
-	*/
-  },
-  http: {
-    port: 8000,
-    allow_origin: '*',
-    mediaroot: './media',
-    webroot: './www',
-    allow_origin: '*',
-    api: true
-  },
-  https: {
-    port: 8443,
-    key: './privatekey.pem',
-    cert: './certificate.pem',
-  },
-  trans: {
-    ffmpeg: '/usr/bin/ffmpeg',
-    tasks: [
-      {
-        app: 'live',
-        hls: true,
-        hlsFlags: '[hls_time=2:hls_list_size=3:hls_flags=delete_segments]',
-        dash: true,
-        dashFlags: '[f=dash:window_size=3:extra_window_size=5]'
-      }
-    ]
-  },
-  auth: {
-    api: true,
-    api_user: 'admin',
-    api_pass: 'admin',
-    play: false,
-    publish: false,
-    secret: 'teamgrit8266'
-  }
-};
+// const config = {
+//   rtmp: {
+//     port: 1935,
+//     chunk_size: 60000,
+//     gop_cache: true,
+//     ping: 30,
+//     ping_timeout: 60,
+// 	/*
+//     ssl: {
+//       port: 443,
+//       key: './privatekey.pem',
+//       cert: './certificate.pem',
+//     }
+// 	*/
+//   },
+//   http: {
+//     port: 8000,
+//     allow_origin: '*',
+//     mediaroot: './media',
+//     webroot: './www',
+//     allow_origin: '*',
+//     api: true
+//   },
+//   https: {
+//     port: 8443,
+//     key: './privatekey.pem',
+//     cert: './certificate.pem',
+//   },
+//   trans: {
+//     ffmpeg: '/usr/bin/ffmpeg',
+//     tasks: [
+//       {
+//         app: 'live',
+//         hls: true,
+//         hlsFlags: '[hls_time=2:hls_list_size=3:hls_flags=delete_segments]',
+//         dash: true,
+//         dashFlags: '[f=dash:window_size=3:extra_window_size=5]'
+//       }
+//     ]
+//   },
+//   auth: {
+//     api: true,
+//     api_user: 'admin',
+//     api_pass: 'admin',
+//     play: false,
+//     publish: false,
+//     secret: 'teamgrit8266'
+//   }
+// };
+
+// -- changed by sikang
+const fs = require('fs');
+const jsonFile = fs.readFileSync('./config.json', 'utf8');
+if (jsonFile == undefined) {
+  console.log(jsonFile);
+}
+
+const config = JSON.parse(jsonFile);
+if (config == undefined) {
+  console.log(config);
+}
 
 
 let nms = new NodeMediaServer(config)
