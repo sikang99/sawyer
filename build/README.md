@@ -1,5 +1,4 @@
-## Sawyer
-> Nginx based RTMP, DASH/HLS Live Media Server
+## Sawyer : nginx source build version
 
 ### Articles
 - 2020/11/08 [Docker - NGINX MEDIA SERVER 만들기](https://woonizzooni.tistory.com/entry/Docker-NGINX-MEDIA-SERVER-%EB%A7%8C%EB%93%A4%EA%B8%B0)
