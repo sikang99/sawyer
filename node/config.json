@@ -7,7 +7,7 @@
     "ping_timeout": 60
   },
   "http": {
-    "port": 8000,
+    "port": 8080,
     "allow_origin": "*",
     "mediaroot": "./media",
     "webroot": "./www",

@@ -1,6 +1,4 @@
-
-
-
+# .gitignore
 
 
 
@@ -10,4 +8,5 @@
 *.mp4
 *.webm
 
+# Log files
 *.log

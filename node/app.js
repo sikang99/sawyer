@@ -16,11 +16,10 @@ const NodeMediaServer = require('./');
 // 	*/
 //   },
 //   http: {
-//     port: 8000,
+//     port: 8080,
 //     allow_origin: '*',
 //     mediaroot: './media',
-//     webroot: './www',
-//     allow_origin: '*',
+//     webroot: './www',ß
 //     api: true
 //   },
 //   https: {

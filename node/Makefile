@@ -27,9 +27,9 @@ obscast-ffplay of:
 obscast-vlc ov:
 	vlc rtmp://localhost/live/obscast\?pwd=teamgrit8266
 obscast-hls oh:
-	open http://localhost:8000/live/obscast/index.m3u8
+	open http://localhost:8080/live/obscast/index.m3u8
 obscast-dash od:
-	open http://localhost:8000/live/obscast/index.mpd
+	open http://localhost:8080/live/obscast/index.mpd
 
 icaage-ffplay if:
 	ffplay rtmp://localhost/live/iceage
@@ -37,9 +37,9 @@ icaage-vlc iv:
 	vlc rtmp://localhost/live/iceage\?pwd=teamgrit8266
 
 local-stat ls:
-	open http://localhost:8000/admin
+	open http://localhost:8080/admin
 remote-stat rs:
-	open http://cobot.center:8000/stat
+	open http://cobot.center:8080/admin
 #-----------------------------------------------------------------------
 docker d:
 	@echo "> make (docker) [run|kill|exec|ps|upload|download for $(IMAGE)"
@@ -49,14 +49,13 @@ docker-build db:
 
 docker-run dr:
 	docker run -d \
-		-p 8000:8000 -p 1935:1935 \
+		-p 8080:8080 -p 1935:1935 \
 		-v $(PWD)/config.json:/usr/src/app/config.json \
 		--name $(NAME) $(IMAGE)
 
 docker-run-base drb:
 	docker run -d \
 		-p 8080:8080 -p 1935:1935 \
-		-v $(PWD)/log:/var/log/nginx \
 		--name $(NAME) $(IMAGE)
 
 docker-restart-exec drx:
