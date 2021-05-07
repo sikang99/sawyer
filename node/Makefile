@@ -30,10 +30,9 @@ obscast-hls oh:
 	open http://localhost:8080/live/obscast/index.m3u8
 obscast-dash od:
 	open http://localhost:8080/live/obscast/index.mpd
-
+#-----------------------------------------------------------------------
 local l:
 	@echo "> make (local) [cast|play|vlc|hls|stat]"
-
 local-cast lc:
 	ffmpeg -re -stream_loop -1 -i ../data/japan.flv -c copy -f flv rtmp://localhost/live/japan
 local-play lp:
@@ -44,7 +43,7 @@ local-hls lh:
 	open http://localhost:8080/live/japan/index.m3u8
 local-stat ls:
 	open http://localhost:8080/admin
-
+#-----------------------------------------------------------------------
 remote r:
 	@echo "> make (remote) [cast|play|vlc|hls|stat]"
 remote-cast rc:
