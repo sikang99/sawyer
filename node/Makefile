@@ -14,7 +14,7 @@ usage:
 	@echo "usage: make (docker) for $(IMAGE)"
 
 edit e:
-	vi conf/nginx.conf
+	vi config.json
 
 bak:
 	cp Dockerfile bak/Dockerfile.$(BUILD)-$(DIST)
@@ -31,19 +31,22 @@ obscast-hls oh:
 obscast-dash od:
 	open http://localhost:8080/live/obscast/index.mpd
 
+local l:
+	@echo "> make (local) [cast|play|vlc|hls|stat]"
 
 local-cast lc:
-	ffmpeg -re -stream_loop -1 -i ../data/japan.flv -c copy -f flv rtmp://cobot.center/live/japan
+	ffmpeg -re -stream_loop -1 -i ../data/japan.flv -c copy -f flv rtmp://localhost/live/japan
 local-play lp:
-	ffplay rtmp://cobot.center/live/japan
+	ffplay rtmp://localhost/live/japan
 local-vlc lv:
-	vlc rtmp://cobot.center/live/japan
+	vlc rtmp://localhost/live/japan
 local-hls lh:
-	open http://cobot.center:8080/live/japan/index.m3u8
+	open http://localhost:8080/live/japan/index.m3u8
 local-stat ls:
 	open http://localhost:8080/admin
 
-
+remote r:
+	@echo "> make (remote) [cast|play|vlc|hls|stat]"
 remote-cast rc:
 	ffmpeg -re -stream_loop -1 -i ../data/japan.flv -c copy -f flv rtmp://cobot.center/live/japan
 remote-play rp:
