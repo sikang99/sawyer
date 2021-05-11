@@ -7,5 +7,6 @@
 
 ### Open Sourrce
 - [illuspas/Node-Media-Server](https://github.com/illuspas/Node-Media-Server) - A Node.js implementation of RTMP/HTTP-FLV/WS-FLV/HLS/DASH/MP4 Media Server
+- [rgfindl/Node-Media-Server](https://github.com/rgfindl/Node-Media-Server)  - a fork of illuspas/Node-Media-Server
 - [rgfindl/live-streaming-server](https://github.com/rgfindl/live-streaming-server) - Ingest RTMP - Transcode into HLS - Relay to Social Media - Live Streaming
 
