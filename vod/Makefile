@@ -1,13 +1,13 @@
 #
-# Makefile for Sawyer (pkg)
+# Makefile for Sawyer (vod)
 #
 ORG=cojam
-NAME=sawyer-pkg
+NAME=sawyer-vod
 #NAME=nginx-arm
 VERSION=1.18.0
 BASE=$(ORG)/$(NAME)
 DIST=alpine-3.13
-BUILD=$(VERSION).5
+BUILD=$(VERSION).1
 IMAGE=$(BASE):$(BUILD)-$(DIST)
 .PHONY: usage build bak
 #-----------------------------------------------------------------------
