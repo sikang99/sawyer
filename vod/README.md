@@ -3,6 +3,7 @@
 
 ## Articles
 - 2020/07/07 [Building Cloudflare TV from scratch](https://blog.cloudflare.com/building-cloudflare-tv-from-scratch/)
+- [Optimize First-Frame Bitrate for HLS with Serverless Edge Compute](https://blog.stackpath.com/optimize-hls-bitrate/)
 - [Build a hls streaming server with Nginx+nginx-rtmp-module and push it with OBS](https://www.programmersought.com/article/4697984638/)
 
 
