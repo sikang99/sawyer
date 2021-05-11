@@ -28,6 +28,9 @@
 - [MonaSolutions/MonaServer](https://github.com/MonaSolutions/MonaServer) - A lightweight RTMFP, RTMP, WebSocket and HTTP server!
 - [jprjr/multistreamer](https://github.com/jprjr/multistreamer) - [discontinued] A webapp for publishing video to multiple streaming services at once.
 - [vicnoah/docker-alpine-rtmp-hls-live](https://github.com/vicnoah/docker-alpine-rtmp-hls-live)
+    - nginx, nginx-rtmp-module, supervisor
+- [voltan/nginx-stream](https://github.com/voltan/nginx-stream) - Video streaming server that supports RTMP and VOD and HLS output 
+    - nginx, nginx-rtmp-module, nginx-vod-module, ffmpeg
 
 
 ### Slides
