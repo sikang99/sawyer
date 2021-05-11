@@ -23,6 +23,7 @@
 
 
 ### Open Source
+- [kaltura/nginx-vod-module](https://github.com/kaltura/nginx-vod-module) - NGINX-based MP4 Repackager
 - [woonizzooni/nginx-media-server](https://github.com/woonizzooni/nginx-media-server)
 - [MonaSolutions/MonaServer](https://github.com/MonaSolutions/MonaServer) - A lightweight RTMFP, RTMP, WebSocket and HTTP server!
 - [jprjr/multistreamer](https://github.com/jprjr/multistreamer) - [discontinued] A webapp for publishing video to multiple streaming services at once.
