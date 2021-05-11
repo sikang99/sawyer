@@ -4,6 +4,7 @@
 ### Articles
 - [Ubuntu使用Nginx和Nginx-http-flv-module来实现简单的直播服务](https://zhuanlan.zhihu.com/p/337903070)
 - 2020/09/07 [How to make an RTMP Streaming Server and Player with a Raspberry Pi](https://aaronparecki.com/2020/09/07/7/raspberry-pi-streaming-server)
+- 2020/06/16 [Live Streaming Server](https://dev.to/rgfindl/live-streaming-server-395j)
 - 2020/05/07 [**10,000 HLS/RTMP Live Video Streaming Servers With Docker + Nginx**](https://devilslane.com/10000-hls-rtmp-live-video-streaming-servers-with-docker-nginx/)
 - 2019/01/08 [Create your own video streaming server with Linux](https://opensource.com/article/19/1/basic-live-video-streaming-server)
 
@@ -18,6 +19,7 @@
     - [pingostack](https://github.com/pingostack) - open source software for streaming media
 - [The Top 10 Nginx Rtmp Open Source Projects](https://awesomeopensource.com/projects/nginx-rtmp)
 - [**170 Open Source Rtmp Software Projects**](https://opensourcelibs.com/libs/rtmp)
+- Nginx: [http/ngx_http_hls_module.html](http://nginx.org/en/docs/http/ngx_http_hls_module.html)
 
 
 ### Open Source
