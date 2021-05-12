@@ -37,6 +37,7 @@
 - [rizemon/nginx-mod](https://github.com/rizemon/nginx-mod) - Docker file from nginx:alpine modified to include ModSecurity (lib v3) + ModSecurity-nginx connector
 - [winshining/nginx-http-flv-module](https://github.com/winshining/nginx-http-flv-module) - Media streaming server based on nginx-rtmp-module. In addtion to the features nginx-rtmp-module provides, HTTP-FLV, GOP cache and VHOST (one IP for multi domain names) are supported now.
 - [mugennsou/http-flv](https://github.com/mugennsou/http-flv) - NGINX with http-flv-module docker image
+- [codeworksio/docker-streaming-server](https://github.com/codeworksio/docker-streaming-server) - Live streaming server
 
 
 ### Open Source (Player)
